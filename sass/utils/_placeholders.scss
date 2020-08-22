@@ -1,0 +1,47 @@
+// Логотип
+%logo {
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+// для кнопок на странице Студия и Портфолио
+%button-portfolio-button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+}
+// Одинаковый шрифт для - Чем мы занимаемся / Постоянные клиенты
+%what-we-do-Clients {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+//  Шрифт для имени и должности в секции Team
+%team-name-position {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 0px;
+  text-align: center;
+}
+// Круглые иконки для секций-  Team /  Footer
+%icon-team-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}

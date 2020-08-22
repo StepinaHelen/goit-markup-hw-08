@@ -1,0 +1,57 @@
+/*    about*/
+.about {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 47px;
+  }
+  .title {
+    @include Font($title-text-color, bold, 1.14);
+    text-transform: uppercase;
+    margin: 0px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.about-svg {
+  @include Flex();
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.about-items-svg {
+  width: 70px;
+  height: 70px;
+}
+.about-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.about-list .items {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100%-4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-8 * 15px) / 4);
+  }
+}
+.about-list-text {
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+.about-svg-title-text {
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+  }
+}

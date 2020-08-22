@@ -1,0 +1,19 @@
+.logo {
+  @include logo(24px, 1.16);
+  color: $title-text-color;
+  @media screen and (min-width: 1200px) {
+    @include logo(26px, 1.19);
+    margin-right: 85px;
+  }
+}
+.logo-web {
+  color: $accent-color;
+}
+.logo-down {
+  @include logo(24px, 1.16);
+  color: $secondary-text-color;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    @include logo(26px, 1.19);
+  }
+}

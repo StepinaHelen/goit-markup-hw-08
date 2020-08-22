@@ -1,0 +1,73 @@
+/*---- team------- */
+.team {
+  background-color: #f5f4fa;
+
+  .team-title {
+    @include Font($title-text-color, bold, 1.16, 36px);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    margin-top: 0px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+.foto-team {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+}
+.team-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team-list .item {
+  background-color: $secondary-text-color;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+  }
+}
+
+.team .team-name {
+  @extend %team-name-position;
+  color: $title-text-color;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.team-position {
+  @extend %team-name-position;
+  margin-bottom: 16px;
+}
+
+.team-item {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item-links a {
+  @extend %icon-team-footer;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

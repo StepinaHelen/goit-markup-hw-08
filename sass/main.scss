@@ -1,0 +1,26 @@
+@import './utils/variables';
+@import './base/_base';
+@import './utils/mixin';
+@import './components/container';
+@import './components/section';
+
+@import './components/logo';
+@import './layout/header';
+
+@import './layout/hero';
+@import './components/buttons';
+
+@import './layout/about-us';
+
+@import './layout/what_we_do';
+
+@import './utils/placeholders';
+@import './components/svg-items';
+
+@import './layout/team';
+
+@import './layout/clients';
+
+@import './layout/footer';
+
+@import './components/modal';

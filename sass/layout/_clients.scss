@@ -1,0 +1,77 @@
+.clients {
+  @media screen and (min-width: 1200px) {
+  }
+}
+.clients-title {
+  @extend %what-we-do-Clients;
+}
+
+.clients-list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.clients-list-link a {
+  @include Flex();
+
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    margin: 15px;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.clients-list-link {
+  @media screen and (min-width: 480px) {
+    width: calc((100%-4 * 15px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100%-6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-12 * 15px) / 6);
+  }
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+// ------------------практика nth-child -------------------------------------------
+// .clients-list-link {
+//   @media screen and (min-width: 480px) and (max-width: 767px) {
+//     margin-bottom: 30px;
+//     margin-right: 30px;
+
+//     &:nth-child(n + 5) {
+//       margin-bottom: 0px;
+//     }
+//     &:nth-child(2n) {
+//       margin-right: 0px;
+//     }
+//   }
+// }
+// --------------------------------------------------------------------------------
+
+// .clients-list-link:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.clients-svg {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  a:hover & {
+    fill: $accent-color;
+  }
+}

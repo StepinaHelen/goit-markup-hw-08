@@ -1,0 +1,148 @@
+footer {
+  background: #2f303a;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logo-address-social {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.logo-address {
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+  }
+}
+.address-town {
+  color: $secondary-text-color;
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.address-mail-phone {
+  margin-bottom: 9px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 0px;
+  }
+  & a {
+    text-decoration: none;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+// Шрифт для--- ПРИСОЕДИНЯЙТЕСЬ / ПОДПИШИТЕСЬ НА РАССЫЛКУ--
+
+b {
+  @include Font($secondary-text-color, bold, 1.14);
+  text-transform: uppercase;
+}
+
+.footer-items {
+  display: flex;
+  margin-top: 20px;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+}
+.footer-items li {
+  @extend %icon-team-footer;
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.button-subscribe {
+  padding-top: 20px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    padding-top: 48px;
+  }
+}
+
+.down-button {
+  display: flex;
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+}
+
+.icon-sign {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.down-form-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.social {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
+}
+
+.subscribe {
+  padding-top: 60px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    text-align: center;
+
+    margin: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    width: 358px;
+    text-align: left;
+    margin: 0;
+  }
+  .footer-p {
+    @media screen and (max-width: 1199px) {
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  }
+  .subscribe-input {
+    padding-left: 16px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    color: $secondary-text-color;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,35 @@
+// Чем мы занимаемся -------------
+.section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 47px;
+  }
+}
+.section-title {
+  @extend %what-we-do-Clients;
+}
+
+.section-list {
+  display: flex;
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.section-list li {
+  position: relative;
+}
+
+.section .section-name {
+  @include Flex();
+  @include Font($secondary-text-color, bold, 1.14);
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  margin: 0px;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+}
