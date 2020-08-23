@@ -307,16 +307,6 @@ header {
   bottom: 0px;
 }
 
-@media screen and (max-width: 767px) {
-  .backdrop-menu::before {
-    display: block;
-    content: ' ';
-    border: 1px solid #ececec;
-    padding: 0px;
-    bottom: 0px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .main-nav-mobile-menu .container {
     display: flex;
@@ -390,6 +380,12 @@ header {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .link.current {
+    margin-bottom: 12px;
+  }
+}
+
 .item .current::after {
   display: flex;
   width: 100%;
@@ -450,7 +446,7 @@ header {
 }
 
 .address li:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 @media screen and (min-width: 768px) {
@@ -564,6 +560,12 @@ a:focus .phone-svg {
 
 .backdrop-menu {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop-menu {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
 }
 
 @media screen and (max-width: 767px) {

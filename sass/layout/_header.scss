@@ -10,15 +10,7 @@ header {
   padding: 0px;
   bottom: 0px;
 }
-.backdrop-menu::before {
-  @media screen and (max-width: 767px) {
-    display: block;
-    content: ' ';
-    border: 1px solid #ececec;
-    padding: 0px;
-    bottom: 0px;
-  }
-}
+
 .main-nav-mobile-menu .container {
   @media screen and (min-width: 768px) {
     @include Flex($jc: space-between);
@@ -81,6 +73,12 @@ header {
   color: $accent-color;
 }
 
+.link.current {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+
 .item .current::after {
   display: flex;
   width: 100%;
@@ -126,8 +124,9 @@ header {
     margin-left: 305px;
   }
 }
+//  margin-bottom: 21px;  вместо 16 px- при 16 меню будет находится на Герое и не будет видно тени
 .address li:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 9px;
@@ -212,6 +211,10 @@ header {
 }
 .backdrop-menu {
   display: flex;
+  @media screen and (max-width: 767px) {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
