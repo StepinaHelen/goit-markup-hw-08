@@ -33,6 +33,8 @@
   }
 }
 .clients-list-link {
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 480px) {
     width: calc((100% - 4 * 15px) / 2);
   }
