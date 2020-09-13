@@ -432,7 +432,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .address .link {
-    align-items: normal;
     justify-content: start;
   }
 }
@@ -588,6 +587,8 @@ a:focus .phone-svg {
     display: flex;
     position: static;
     box-shadow: none;
+    justify-content: space-between;
+    width: auto;
   }
 }
 

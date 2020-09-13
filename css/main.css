@@ -255,7 +255,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .address .link {
-    align-items: normal;
     justify-content: start;
   }
 }
